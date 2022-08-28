@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px; /* estes comandos (min e max width) adaptam o tamanho do texto*/
+            max-width: 800px;
+            margin:auto;
+        }
+
+        img {
+            width: 100%; /*este comando adapta a imagem*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi asperiores deleniti nobis nesciunt sequi? Neque ducimus, nam soluta sint perferendis pariatur aperiam! Earum labore optio suscipit! Delectus facere distinctio animi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, dolores? Esse magnam blanditiis soluta corporis sed eius aut, ipsam quis non debitis, officia iusto quae! Harum numquam laborum nemo temporibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium deleniti odio cumque. Odit cupiditate eum nihil repellat consequatur mollitia, temporibus autem. Assumenda aperiam beatae explicabo vel nisi, ex exercitationem velit!</p>
+        <picture>
+            <source media="(max-width: 800px )" srcset="imagens/irina-blok-pq.jpg"> <!--o comando source, dentro da tag picture faz com que eu coloque uma imagem recortada salva na pasta para adaptar ainda mais a minha imagem dentro de um dispositivo PEQUENO serve como aprimoramento-->
+            <img src="imagens/irina-blok.jpg" alt="irina blok"><!--este comando é o suficiente para encaixar as imagens nos dispositivos junto com o img width: 100% acima colocado--> 
+        </picture>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi asperiores deleniti nobis nesciunt sequi? Neque ducimus, nam soluta sint perferendis pariatur aperiam! Earum labore optio suscipit! Delectus facere distinctio animi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, dolores? Esse magnam blanditiis soluta corporis sed eius aut, ipsam quis non debitis, officia iusto quae! Harum numquam laborum nemo temporibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium deleniti odio cumque. Odit cupiditate eum nihil repellat consequatur mollitia, temporibus autem. Assumenda aperiam beatae explicabo vel nisi, ex exercitationem velit!</p>
+    </main>
+</body>
+</html>
