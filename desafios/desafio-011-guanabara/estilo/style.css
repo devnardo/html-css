@@ -1,4 +1,13 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue &família= Paixão+Um & display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & display=swap');
+
+:rot {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Bebas Neue', cursiva;
+}
 
 * {
    margin: 0px;
@@ -8,6 +17,7 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -19,6 +29,7 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
 }
 
 header > p {
